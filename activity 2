@@ -1,0 +1,158 @@
+@@ -0,0 +1,157 @@
+1. tree
+
+Command:
+
+tree
+
+Description:
+Shows directory structure in tree format.
+
+Output:
+
+.
+├── Documents
+│   └── notes.txt
+├── Downloads
+│   └── setup.sh
+└── myfile.txt
+
+Remarks:
+Gives a clear visual of file hierarchy.
+
+
+---
+
+2. cd
+
+Command:
+
+cd Documents
+
+Description:
+Changes the current working directory.
+
+Output:
+(No output if successful)
+
+Remarks:
+Now the user is inside /home/  ansh /Documents.
+
+
+---
+
+3. cd ..
+
+Command:
+
+cd ..
+
+Description:
+Moves one directory up from the current location.
+
+Output:
+(No output if successful)
+
+Remarks:
+Now the user is back in /home/ ansh .
+
+
+---
+
+4. ifconfig
+
+Command:
+
+ifconfig
+
+Description:
+Shows network interfaces and IP addresses.
+
+Output:
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  
+        inet 192.168.1.10  netmask 255.255.255.0  broadcast 192.168.1.255
+lo: flags=73<UP,LOOPBACK,RUNNING>
+        inet 127.0.0.1  netmask 255.0.0.0
+
+Remarks:
+Useful for checking IP address and connectivity.
+
+
+---
+
+5. ping
+
+Command:
+
+ping google.com -c 4
+
+Description:
+Tests network connectivity by sending packets.
+
+Output:
+
+PING google.com (142.250.183.238): 56 data bytes
+64 bytes from 142.250.183.238: icmp_seq=1 ttl=118 time=24.5 ms
+64 bytes from 142.250.183.238: icmp_seq=2 ttl=118 time=25.1 ms
+64 bytes from 142.250.183.238: icmp_seq=3 ttl=118 time=24.9 ms
+64 bytes from 142.250.183.238: icmp_seq=4 ttl=118 time=25.3 ms
+
+--- google.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss
+
+Remarks:
+Confirms internet connectivity to Google with response time.
+3. ls -a
+
+Command:
+
+ls -a
+
+Description:
+Lists all files, including hidden ones (those starting with .).
+
+Output:
+
+.  ..  .bashrc  .profile  Desktop  Documents  myfile.txt
+
+Remarks:
+Shows hidden configuration files and the . (current dir) and .. (parent dir).
+
+
+---
+
+6. ls -b
+
+Command:
+
+ls -b
+
+Description:
+Lists files, but escapes non-printable characters (shows them as \xxx).
+
+Output:
+
+Desktop  Documents  Downloads  file\ with\ spaces.txt
+
+Remarks:
+Useful if filenames have spaces or special characters.
+
+
+---
+
+7. ls -c
+
+Command:
+
+ls -c
+
+Description:
+Lists files sorted by last modification time (newest first).
+
+Output:
+
+myfile.txt  Downloads  Desktop  Documents
+
+Remarks:
+Helps track which files were modified most recently
